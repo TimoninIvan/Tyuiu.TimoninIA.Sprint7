@@ -34,7 +34,7 @@ namespace Tyuiu.TimoninIA.Sprint7.Project.V10
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             buttonClose = new Button();
-            textBox2 = new TextBox();
+            textBoxAbout = new TextBox();
             SuspendLayout();
             // 
             // buttonClose
@@ -47,23 +47,23 @@ namespace Tyuiu.TimoninIA.Sprint7.Project.V10
             buttonClose.UseVisualStyleBackColor = true;
             buttonClose.Click += buttonClose_Click;
             // 
-            // textBox2
+            // textBoxAbout
             // 
-            textBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            textBox2.Location = new Point(-3, -1);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(582, 220);
-            textBox2.TabIndex = 3;
-            textBox2.Text = resources.GetString("textBox2.Text");
+            textBoxAbout.Font = new System.Drawing.Font("Segoe UI", 12F);
+            textBoxAbout.Location = new Point(-3, -1);
+            textBoxAbout.Multiline = true;
+            textBoxAbout.Name = "textBoxAbout";
+            textBoxAbout.ReadOnly = true;
+            textBoxAbout.Size = new Size(582, 220);
+            textBoxAbout.TabIndex = 3;
+            textBoxAbout.Text = resources.GetString("textBoxAbout.Text");
             // 
             // FormAbout
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(598, 259);
-            Controls.Add(textBox2);
+            Controls.Add(textBoxAbout);
             Controls.Add(buttonClose);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
@@ -77,6 +77,6 @@ namespace Tyuiu.TimoninIA.Sprint7.Project.V10
 
         #endregion
         private Button buttonClose;
-        private TextBox textBox2;
+        private TextBox textBoxAbout;
     }
 }

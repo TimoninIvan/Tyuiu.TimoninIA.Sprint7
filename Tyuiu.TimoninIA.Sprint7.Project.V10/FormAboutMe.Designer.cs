@@ -29,36 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAboutMe));
-            pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
+            textBoxAboutMe = new TextBox();
             buttonOK_TIA = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // textBoxAboutMe
             // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(418, 413);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(-1, -8);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(380, 77);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "Работу выполнил студент 1-го курса, группы ИИПБ 24-1, Тимонин Иван Александрович.";
+            textBoxAboutMe.Dock = DockStyle.Fill;
+            textBoxAboutMe.Font = new Font("Segoe UI", 12F);
+            textBoxAboutMe.Location = new Point(0, 0);
+            textBoxAboutMe.Multiline = true;
+            textBoxAboutMe.Name = "textBoxAboutMe";
+            textBoxAboutMe.ReadOnly = true;
+            textBoxAboutMe.Size = new Size(554, 522);
+            textBoxAboutMe.TabIndex = 1;
+            textBoxAboutMe.Text = "Проект выполнил студент группы ИИПБ 24-1. Тимонин Иван Александрович по предметной области: Заказы";
             // 
             // buttonOK_TIA
             // 
-            buttonOK_TIA.Location = new Point(326, 384);
+            buttonOK_TIA.Location = new Point(458, 497);
             buttonOK_TIA.Name = "buttonOK_TIA";
             buttonOK_TIA.Size = new Size(75, 23);
             buttonOK_TIA.TabIndex = 2;
@@ -66,14 +57,23 @@
             buttonOK_TIA.UseVisualStyleBackColor = true;
             buttonOK_TIA.Click += buttonOK_TIA_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1, 76);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(557, 415);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
             // FormAboutMe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(418, 413);
-            Controls.Add(buttonOK_TIA);
-            Controls.Add(textBox1);
+            ClientSize = new Size(554, 522);
             Controls.Add(pictureBox1);
+            Controls.Add(buttonOK_TIA);
+            Controls.Add(textBoxAboutMe);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormAboutMe";
@@ -85,9 +85,8 @@
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
-        private TextBox textBox1;
+        private TextBox textBoxAboutMe;
         private Button buttonOK_TIA;
+        private PictureBox pictureBox1;
     }
 }
